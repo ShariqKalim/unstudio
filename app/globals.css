@@ -1,27 +1,93 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.all_images h1,
+.all_background h1 {
+  width: 200px;
+  margin: 10px;
+  font-size: 30px;
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(226, 21, 21, 0.984),
+    rgba(255, 255, 0, 0.735)
+  );
+  border: none;
+  border-radius: 10px;
+}
+.all_images,
+.all_background {
+  width: 25vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.all_images img,
+.all_background img {
+  border: 1px solid whitesmoke;
+  width: 250px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.68);
+  cursor: pointer;
+}
+.main_screen {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.861);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+#canvas {
+  margin-top: 100px;
+  border: 1px solid whitesmoke;
+  box-shadow: 1px 1px 10px 1px rgba(255, 255, 255, 0.39);
+}
+
+.canvas_border {
+  padding: 10px;
+  border: 1px solid whitesmoke;
+}
+
+.my_canvas {
+  text-align: center;
+  margin-top: 10px;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+#changeD {
+  margin: 0 auto 10px auto;
+  width: 200px;
+  height: 30px;
+  border: none;
+  color: black;
+  background-color: yellow;
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1200px) {
+  .all_images,
+  .all_background {
+    width: 100vw;
+    flex-wrap: wrap;
   }
-}
-
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  #canvas {
+    margin-left: 100px;
+  }
+  .main_screen {
+    flex-direction: column;
+  }
+  .all_background h1 {
+    margin-top: 15vh;
+  }
 }
