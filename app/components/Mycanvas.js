@@ -38,8 +38,8 @@ const Mycanvas = () => {
           opacity: 2,
         });
 
-        const imageX = 100;
-        const imageY = 100;
+        const imageX = 60;
+        const imageY = 60;
 
         imgInstance1.set({
           left: imageX,
@@ -58,8 +58,8 @@ const Mycanvas = () => {
           opacity: 2,
         });
 
-        const imageX = 100;
-        const imageY = 100;
+        const imageX = 60;
+        const imageY = 60;
 
         imgInstance2.set({
           left: imageX,
@@ -78,8 +78,8 @@ const Mycanvas = () => {
           opacity: 2,
         });
 
-        const imageX = 100;
-        const imageY = 100;
+        const imageX = 60;
+        const imageY = 60;
 
         imgInstance3.set({
           left: imageX,
@@ -98,8 +98,8 @@ const Mycanvas = () => {
           opacity: 2,
         });
 
-        const imageX = 100;
-        const imageY = 100;
+        const imageX = 60;
+        const imageY = 60;
 
         imgInstance4.set({
           left: imageX,
@@ -107,7 +107,6 @@ const Mycanvas = () => {
         });
 
         canvas.add(imgInstance4);
-
         canvas.renderAll();
       }
 
